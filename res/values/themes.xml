@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="colorControlNormal">#757575</item>
+        <item name="background">@color/white</item>
+
+
+
+    </style>
+
+    <!-- Button Style -->
+    <style name="AppButtonStyle" parent="Widget.AppCompat.Button">
+        <!-- Button Text Color -->
+        <item name="android:textColor">#FFFFFF</item>
+
+        <!-- Button Background Color -->
+        <item name="android:background">#FFD700</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="AppToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <!-- Text appearance for the app name on the toolbar -->
+    </style>
+
+    <!-- Text Appearance for App Name on Toolbar -->
+    <style name="AppToolbarTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <!-- Text Color for the App Name -->
+        <item name="android:textColor">#FFFFFF</item>
+
+    </style>
+<style name="Base.Theme.BMI" parent="AppTheme"/>
+
+    <style name="Theme.BMI" parent="Base.Theme.BMI" />
+
+    <style name="Theme.BMI.NoActionBar">
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="editTextStyle">@style/textField</item>
+        <item name="buttonStyle">@style/button</item>
+
+    </style>
+
+    <style name="Theme.BMI.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="backgroundTint">@color/bruntOrange</item>
+    </style>
+
+    <style name="Theme.BMI.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
+
+    </style>
+
+    <style name="button">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#CC5500</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="shapeAppearance">@id/square</item>
+    </style>
+
+    <style name="textField">
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginStart">1dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/hint</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="strokeColor">@color/grey</item>
+        <item name="backgroundTint">@color/purple</item>
+
+    </style>
+
+    <style name="appBar">
+        <item name="backgroundTint">@color/bruntOrange</item>
+        <item name="color">@color/white</item>
+        <item name="android:height">300dp</item>
+    </style>
+
+    <style name="headText">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <style name="textView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="blueBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textSize">19sp</item>
+    </style>
+
+</resources>
+
+    <!-- App Theme -->

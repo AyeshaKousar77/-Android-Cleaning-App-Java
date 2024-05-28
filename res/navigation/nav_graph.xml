@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/specificFragment">
+
+    <!-- Car Fragment -->
+    <fragment
+        android:id="@+id/carFragment"
+        android:name="com.example.bmi.ui.car.CarFragment"
+        android:label="Car Fragment">
+        <action
+            android:id="@+id/action_carFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+
+    <!-- Payment Fragment -->
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.bmi.ui.payment.PaymentFragment"
+        android:label="Payment Fragment" />
+
+    <!-- Specific Fragment -->
+    <fragment
+        android:id="@+id/specificFragment"
+        android:name="com.example.bmi.ui.specific.SpecificFragment"
+        android:label="Specific Fragment"
+        tools:layout="@layout/fragment_specific">
+
+        <!-- Action to Confirmation Fragment -->
+        <action
+            android:id="@+id/action_specificFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment" />
+
+    </fragment>
+
+    <!-- Confirmation Fragment -->
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.example.bmi.ui.ConfirmationFragment"
+        android:label="Confirmation Fragment"
+        tools:layout="@layout/fragment_confirmation" />
+
+</navigation>

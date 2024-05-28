@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_you"
+        android:name="com.example.bmi.ui.you.YouFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/profile" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bmi.ui.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_clean"
+        android:name="com.example.bmi.ui.clean.CleanFragment"
+        android:label="@string/home"
+        tools:layout="@layout/clean_page" />
+    <fragment
+        android:id="@+id/nav_paint"
+        android:name="com.example.bmi.ui.paint.PaintFragment"
+        android:label="@string/paint"
+        tools:layout="@layout/paint_page" />
+    <fragment
+        android:id="@+id/nav_kitchen"
+        android:name="com.example.bmi.ui.setup.SetupFragment"
+        android:label="@string/kitchen"
+        tools:layout="@layout/kitchen_set" />
+    <fragment
+        android:id="@+id/nav_car"
+        android:name="com.example.bmi.ui.car.CarFragment"
+        android:label="@string/vehicle"
+        tools:layout="@layout/car_wash" />
+    <fragment
+        android:id="@+id/nav_specific"
+        android:name="com.example.bmi.ui.specific.SpecificFragment"
+        android:label="@string/specific"
+        tools:layout="@layout/specific" />
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.bmi.ui.about.aboutFragment"
+        android:label="@string/About"
+        tools:layout="@layout/about" />
+    <fragment
+        android:id="@+id/nav_transaction"
+        android:name="com.example.bmi.ui.transaction.FragmentTransaction"
+        android:label="@string/transaction"
+        tools:layout="@layout/activity_transaction" />
+    <action
+        android:id="@+id/action_homeFragment_to_cleanFragment"
+        app:destination="@id/nav_clean" />
+    <action
+        android:id="@+id/action_homeFragment_to_paintFragment"
+        app:destination="@id/nav_paint" />
+    <action
+        android:id="@+id/action_homeFragment_to_carFragment"
+        app:destination="@id/nav_car" />
+    <action
+        android:id="@+id/action_homeFragment_to_kitchenFragment"
+        app:destination="@id/nav_kitchen" />
+    <action
+        android:id="@+id/action_homeFragment_to_customFragment"
+        app:destination="@id/nav_specific" />
+    <action
+        android:id="@+id/action_transaction_to_Home"
+         app:destination="@id/nav_home"
+        />
+    <action
+        android:id="@+id/here_to_transaction"
+        app:destination="@id/nav_transaction" />
+
+</navigation>

@@ -1,0 +1,139 @@
+<resources>
+    <string name="app_name">Cleaning Service</string>
+    <string name="details">Enter your details</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="username">Username</string>
+    <string name="phone">phone no</string>
+    <string name="signup">sign up</string>
+    <string name="already">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="dt_account">No Account? Create one!</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="click">Get Started</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_page">Login to your account!</string>
+    <string name="follow">Follow Us</string>
+    <string name="Facebook">Facebook</string>
+    <string name="Twitter">Twitter</string>
+    <string name="Instagram">Instagram</string>
+    <string name="home">Home Cleaning</string>
+    <string name="company">Experience the ultimate convenience with our cleaning service company\'s innovative app. Book professional cleaning services online effortlessly, right from the palm of your hand. Enjoy a spotless home or office with just a few taps, courtesy of our trusted and efficient team.</string>
+    <string name="paint">House Painting</string>
+    <string name="vehicle">Car Wash</string>
+    <string name="kitchen">Kitchen Setup</string>
+    <string name="specific">Customized Options</string>
+    <string name="FAQs">FAQs</string>
+    <string name="profile">You</string>
+    <string name="Settings">Settings</string>
+    <string name="About">About us</string>
+    <string name="delete">Delete Account</string>
+    <string name="Contact">Contact Us</string>
+    <string name="emailAddress">ayeshakousarbscs01@gmail.com</string>
+    <string name="qs">What are the available time slots for booking?\n From 6 AM to 5 PM\n\nWhich areas do you serve?\nWe serve some specific areas of Islamabad. Kindly check on Map\n\nDo you offer cleaning services for residential properties only, or do you also clean commercial spaces?\nNo, we only provide Cleaning Services for Residential properties</string>
+    <string name="category">Select Category</string>
+    <string name="k_op1">Deep Cleaning</string>
+    <string name="k_op2">Routine Cleaning </string>
+    <string name="choose">Choose</string>
+    <string name="kit_size">Size of Kitchen</string>
+    <string name="marla">Marla</string>
+    <string name="Proceed">Proceed</string>
+    <string name="Main">Main</string>
+    <string name="Initial">Initial Cleaning</string>
+    <string name="Deep">Deep Cleaning</string>
+    <string name="apartment">Size of Apartment: </string>
+    <string name="size">Enter size</string>
+    <string name="room">Number of Rooms: </string>
+    <string name="numb">Enter number</string>
+    <string name="select_location">Select Location</string>
+    <string name="Where">Where</string>
+    <string name="Bi_weekly">Bi-weekly</string>
+    <string name="Monthly">Monthly</string>
+    <string name="Weekly">Weekly</string>
+    <string name="freq">Select Frequency</string>
+    <string name="Evening">Evening</string>
+    <string name="Afternoon">Afternoon</string>
+    <string name="Morning">Morning</string>
+    <string name="service">Service Time?</string>
+    <string name="organize">Organizing Cabinets</string>
+    <string name="appliance">Deep Cleaning Appliances</string>
+    <string name="c_app">Clean Appliances</string>
+    <string name="wipe">Wipe Countertops</string>
+    <string name="task">Select Cleaning Tasks</string>
+    <string name="addition">Additional Services</string>
+    <string name="type">Select Vehicle Type</string>
+    <string name="carWash">carWash</string>
+
+    <string-array name="vehicle_types">
+        <item>Car</item>
+        <item>Motor-Bike</item>
+        <item>Truck</item>
+        <item>Van</item>
+        <!-- Add more vehicle types here if needed -->
+    </string-array>
+    <string name="Select_Wash_Option">Select Wash Option</string>
+    <string name="Simple_Cleaning">Simple Cleaning</string>
+    <string name="Additional_S">Additional Services (Polish, etc)</string>
+    <string name="Interior">Interior Detailing</string>
+    <string name="exterior">Exterior Waxing</string>
+    <string name="time">Select Preferred Time</string>
+    <!-- Color options -->
+    <string-array name="color_options">
+        <item>White</item>
+        <item>Beige</item>
+        <item>Light Gray</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Room options -->
+    <string-array name="room_options">
+        <item>Bedroom</item>
+        <item>Living Room</item>
+        <item>Kitchen</item>
+        <item>Bathroom</item>
+        <item>Dining Room</item>
+        <item>Office</item>
+        <item>Other</item>
+    </string-array>
+    <string name="Interior_Painting">Interior Painting</string>
+    <string name="Exterior_Painting">Exterior Painting</string>
+    <string name="Both">Both</string>
+    <string name="Select_Color">Select Color</string>
+    <string name="Select_Room">Select Room</string>
+    <string name="Wall_Preparation">Wall Preparation</string>
+    <string name="Wallpaper_Removal">Wallpaper Removal</string>
+    <string name="Trim_Painting">Trim Painting</string>
+    <string name="Srm">Select Rooms to Clean</string>
+    <string name="Kit">Kitchen</string>
+    <string name="Bt">Bathroom</string>
+    <string name="Ad">Additional Services</string>
+    <string name="Cp">Carpet Cleaning</string>
+    <string name="Ww">Window Washing</string>
+    <string name="Sf">Select Frequency</string>
+    <string name="Si">Special Instructions</string>
+    <string name="Cb">Confirm Booking</string>
+    <string name="instructions">Enter any special instructions here…</string>
+    <string name="hi">Hi Ayesha!</string>
+    <string name="let">Let us know!\n If you need any special Services\n We are here for you\n Contact us: +92331 5417689</string>
+    <string name="transaction">Kindly fill your Transaction details Carefully!</string>
+    <string name="no">Enter Bank Account No</string>
+    <string name="Amount">Amount:</string>
+    <string name="Confirm">Confirm</string>
+    <string name="Bank">Bank</string>
+    <string name="location">Set Location</string>
+</resources>

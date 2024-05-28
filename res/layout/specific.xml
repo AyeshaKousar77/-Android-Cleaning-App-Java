@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.specific.SpecificFragment">
+
+    <TextView
+        android:id="@+id/text_specific"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/tr"
+        android:padding="16dp">
+
+
+        <!-- Room Selection -->
+
+        <TextView
+            android:layout_width="231dp"
+            android:layout_height="53dp"
+            android:text="@string/Srm"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxKitchen"
+            android:layout_width="211dp"
+            android:layout_height="62dp"
+            android:text="@string/Kit"
+            android:textColor="@color/purple" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBathroom"
+            android:layout_width="214dp"
+            android:layout_height="63dp"
+            android:text="@string/Bt"
+            android:textColor="@color/purple" />
+
+        <!-- Additional Services -->
+
+        <TextView
+            android:layout_width="243dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Ad"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCarpetCleaning"
+            android:layout_width="215dp"
+            android:layout_height="58dp"
+            android:text="@string/Cp"
+            android:textColor="@color/purple" />
+
+        <CheckBox
+            android:id="@+id/checkBoxWindowWashing"
+            android:layout_width="214dp"
+            android:layout_height="50dp"
+
+            android:text="@string/Ww"
+            android:textColor="@color/purple" />
+
+        <!-- Frequency Selection -->
+        <TextView
+            android:layout_width="201dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Sf"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupFrequency"
+            android:layout_width="376dp"
+            android:layout_height="67dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonWeekly"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/Weekly"
+                android:textColor="@color/purple" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBiWeekly"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/Bi_weekly"
+                android:textColor="@color/purple" />
+
+            <RadioButton
+                android:id="@+id/radioButtonMonthly"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/Monthly"
+                android:textColor="@color/purple" />
+        </RadioGroup>
+
+        <!-- Special Instructions -->
+        <TextView
+            android:layout_width="252dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Si"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Button to Confirm Booking -->
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="outline"
+            android:layout_marginTop="10dp"
+            android:hint="@string/instructions"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:inputType="textMultiLine" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonConfirmBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Cb"
+            android:layout_marginTop="24dp"
+            style="@style/button"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

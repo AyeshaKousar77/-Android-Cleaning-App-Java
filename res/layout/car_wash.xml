@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.car.CarFragment">
+
+    <TextView
+        android:id="@+id/text_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tr"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/type"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner_vehicle_type"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:entries="@array/vehicle_types"
+            android:textColor="@color/purple" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/Select_Wash_Option"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_wash_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_option1"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Simple_Cleaning"
+                android:textColor="@color/purple" />
+
+            <RadioButton
+                android:id="@+id/radio_option2"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Additional_S"
+                android:textColor="@color/purple" />
+
+            <RadioButton
+                android:id="@+id/radio_option3"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Interior"
+                android:textColor="@color/purple" />
+
+            <RadioButton
+                android:id="@+id/radio_option4"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/exterior"
+                android:textColor="@color/purple" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/time"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_time_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_morning"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Morning"
+                android:textColor="@color/purple" />
+
+            <RadioButton
+                android:id="@+id/radio_afternoon"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Afternoon"
+                android:textColor="@color/purple" />
+
+            <RadioButton
+                android:id="@+id/radio_evening"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/Evening"
+                android:textColor="@color/purple" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button_pay_now"
+            style="@style/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="@string/Proceed" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

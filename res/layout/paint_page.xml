@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.paint.PaintFragment">
+
+    <TextView
+        android:id="@+id/text_paint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:background="@drawable/tr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/category"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Painting Service Options -->
+        <RadioGroup
+            android:id="@+id/painting_service_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_interior_painting"
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:textColor="@color/purple"
+                android:text="@string/Interior_Painting" />
+
+            <RadioButton
+                android:id="@+id/radio_exterior_painting"
+                android:layout_marginTop="10dp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:textColor="@color/purple"
+                android:text="@string/Exterior_Painting" />
+
+            <RadioButton
+                android:id="@+id/radio_both_painting"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:textSize="16sp"
+                android:textColor="@color/purple"
+                android:layout_marginTop="10dp"
+                android:text="@string/Both" />
+
+        </RadioGroup>
+
+        <!-- Space -->
+
+
+        <!-- Select Color -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Select_Color"
+            android:textSize="24sp"
+            android:textColor="@color/purple"
+            android:textStyle="bold" />
+
+        <!-- Color Selection -->
+        <Spinner
+            android:id="@+id/color_selection_spinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/color_options" />
+
+        <!-- Space -->
+
+
+        <!-- Select Room -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Select_Room"
+            android:textSize="24sp"
+            android:textColor="@color/purple"
+            android:textStyle="bold" />
+
+        <!-- Room Selection -->
+        <Spinner
+            android:id="@+id/room_selection_spinner"
+            android:layout_marginTop="10dp"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:entries="@array/room_options" />
+
+        <!-- Additional Services -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/choose"
+            android:textColor="@color/purple"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/wall_preparation_checkbox"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/Wall_Preparation"
+            android:textColor="@color/purple"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/wallpaper_removal_checkbox"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/purple"
+            android:layout_marginTop="10dp"
+            android:text="@string/Wallpaper_Removal" />
+
+        <CheckBox
+            android:id="@+id/trim_painting_checkbox"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:textColor="@color/purple"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/Trim_Painting" />
+
+        <!-- Space -->
+
+
+        <!-- Button to Proceed -->
+        <Button
+            android:id="@+id/button_proceed_painting"
+            style="@style/button"
+            android:layout_marginTop="16dp"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Proceed" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

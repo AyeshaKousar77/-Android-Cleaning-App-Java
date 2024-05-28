@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up"
+    android:background="@drawable/gradient">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/nav_header_activity_home" />
+
+    <LinearLayout
+        android:layout_width="371dp"
+        android:layout_height="707dp"
+        android:layout_marginStart="18dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            app:boxBackgroundMode="outline"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText2"
+                android:layout_width="244dp"
+                android:layout_height="55dp"
+                android:inputType="text" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            app:boxBackgroundMode="outline"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText3"
+                android:layout_width="246dp"
+                android:layout_height="55dp"
+                android:inputType="text" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="@string/phone"
+            android:inputType="text"
+            app:boxBackgroundMode="outline"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText4"
+                android:layout_width="249dp"
+                android:layout_height="55dp"
+                android:inputType="phone" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="@string/email"
+            android:inputType="text"
+            app:boxBackgroundMode="outline"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText5"
+                android:layout_width="249dp"
+                android:layout_height="55dp"
+                android:inputType="textEmailAddress" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:hint="@string/password"
+            android:inputType="text"
+            app:boxBackgroundMode="outline"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editText6"
+                android:layout_width="255dp"
+                android:layout_height="47dp"
+                android:inputType="textWebPassword" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinnerBank"
+            android:layout_width="219dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutBankAccountNo"
+            android:hint="@string/no"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:inputType="text"
+            app:boxBackgroundMode="outline"
+            app:counterMaxLength="50"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextBankAccountNo"
+                android:layout_width="255dp"
+                android:layout_height="47dp"
+                android:layout_marginBottom="5dp"
+                android:inputType="text"
+                android:textColor="@color/purple"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/open_map_button"
+            style="@style/blueBtn"
+            android:layout_width="255dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/location" />
+        <Button
+            android:id="@+id/b4"
+            style="@style/button"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+
+            android:text="@string/signup" />
+
+        <Button
+            android:id="@+id/b5"
+            style="@style/blueBtn"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/already">
+
+        </Button>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

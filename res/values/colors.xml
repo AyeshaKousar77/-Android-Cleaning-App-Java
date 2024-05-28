@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <color name="fields">#E6E6FA</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brightOrange">#FFAC1C</color>
+    <color name="teal">#008080</color>
+    <color name="blueGreen">#088F8F</color>
+    <color name="blue">#0000FF</color>
+    <color name="bruntOrange">#CC5500</color>
+    <color name="orange">#EC5800</color>
+    <color name="coral">#FF7F50</color>
+    <color name="coralPink">#F88379</color>
+    <color name="lightPink">#FFB6C1</color>
+    <color name="salmon">#FA8072</color>
+    <color name="grey">#A9A9A9</color>
+    <color name="pink">#E37383</color>
+    <color name="purple">#673147</color>
+    <color name="hint">#A1887F</color>
+
+
+
+    <color name="purple_200">#2266d3</color>
+    <color name="purple_500">#4083e6</color>
+    <color name="purple_700">#fca91c</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="appBlue">#4083e6</color>
+    <color name="appYellow">#fca91c</color>
+    </resources>
+
+
